@@ -77,7 +77,9 @@ buttonPressed(String buttonText){
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Calc"),
+      ),
       body: Column(
         children: <Widget>[
          Expanded(
