@@ -176,9 +176,7 @@ buttonPressed(String buttonText){
                           _buttonRounded(title: '1'),
                           _buttonRounded(title: '2'),
                           _buttonRounded(title: '3'),
-                          _buttonRounded(
-                              title: '+',
-                              textColor: darkMode ? Colors.green : Colors.redAccent)
+                          _buttonRounded(title: '+', textColor: darkMode ? Colors.green : Colors.redAccent)
                         ],
                       ),
                       Row(
@@ -213,8 +211,9 @@ buttonPressed(String buttonText){
         Color? textColor}) {
     return FlatButton(
       onPressed: () => buttonPressed(title!),
+      padding: EdgeInsets.symmetric(horizontal: 5),
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 8),
+        padding: EdgeInsets.symmetric(vertical: 5),
         child: NeuContainer(
           darkMode: darkMode,
           borderRadius: BorderRadius.circular(40),
@@ -252,6 +251,7 @@ buttonPressed(String buttonText){
         Color? textColor}) {
     return FlatButton(
       onPressed: () => buttonPressed("<"),
+      padding: EdgeInsets.symmetric(horizontal: 8),
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 8),
         child: NeuContainer(
@@ -280,7 +280,7 @@ buttonPressed(String buttonText){
         darkMode: darkMode,
         borderRadius: BorderRadius.circular(50),
         padding:
-        EdgeInsets.symmetric(horizontal: padding, vertical: padding / 2),
+        EdgeInsets.symmetric(horizontal: padding / 2, vertical: padding / 2),
         child: Container(
           width: padding * 2,
           child: Center(
